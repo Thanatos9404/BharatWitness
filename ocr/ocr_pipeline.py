@@ -5,13 +5,14 @@ import cv2
 import numpy as np
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Any
-from paddleocr import PaddleOCR
 import unicodedata
 import regex as re
+import io
 from PIL import Image
 import logging
 import yaml
-
+import pypdf
+from paddleocr import PaddleOCR
 
 class OCRPipeline:
     def __init__(self, config_path: str = "config/config.yaml"):
@@ -41,7 +42,6 @@ class OCRPipeline:
             raise ValueError(f"Unsupported file type: {file_path.suffix}")
 
     def _process_pdf(self, pdf_path: Path) -> Dict[str, Any]:
-        import pypdf
 
         document_data = {
             'file_path': str(pdf_path),
