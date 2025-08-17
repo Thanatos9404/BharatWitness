@@ -5,9 +5,9 @@ from typing import List, Dict, Any, Optional, Tuple
 import yaml
 import logging
 from dataclasses import dataclass
-from pipeline.segment import DocumentSection
-from utils.span_utils import SpanManager
-from utils.layout import LayoutAnalyzer
+from bharatwitness.pipeline.segment import DocumentSection
+from bharatwitness.utils.span_utils import SpanManager
+from bharatwitness.utils.layout import LayoutAnalyzer
 
 
 @dataclass

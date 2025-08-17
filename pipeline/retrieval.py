@@ -18,9 +18,9 @@ from collections import defaultdict
 import heapq
 import regex as re
 
-from pipeline.index_build import HybridIndexBuilder
-from utils.span_utils import TextSpan, SpanManager
-from utils.temporal_utils import TemporalFilter
+from bharatwitness.pipeline.index_build import HybridIndexBuilder
+from bharatwitness.utils.span_utils import TextSpan, SpanManager
+from bharatwitness.utils.temporal_utils import TemporalFilter
 
 
 @dataclass

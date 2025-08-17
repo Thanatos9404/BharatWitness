@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import yaml
 import logging
-from typing import List, Dict, Tuple, Any
+from typing import List, Dict, Tuple, Any, Optional
 import torch
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
@@ -15,9 +15,9 @@ from sentence_transformers.evaluation import InformationRetrievalEvaluator
 import pandas as pd
 from tqdm import tqdm
 
-from utils.logging_utils import setup_logging
-from utils.seed_utils import set_deterministic_seed
-from pipeline.index_build import HybridIndexBuilder
+from bharatwitness.utils.logging_utils import setup_logging
+from bharatwitness.utils.seed_utils import set_deterministic_seed
+from bharatwitness.pipeline.index_build import HybridIndexBuilder
 
 
 class QADataset(Dataset):

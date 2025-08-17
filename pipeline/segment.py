@@ -7,8 +7,8 @@ from pathlib import Path
 import yaml
 import logging
 from dataclasses import dataclass
-from utils.span_utils import SpanManager
-from utils.layout import LayoutAnalyzer
+from bharatwitness.utils.span_utils import SpanManager
+from bharatwitness.utils.layout import LayoutAnalyzer
 
 
 @dataclass
