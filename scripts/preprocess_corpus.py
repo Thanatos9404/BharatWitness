@@ -11,9 +11,9 @@ import pandas as pd
 from tqdm import tqdm
 import logging
 
-from bharatwitness.ocr.ocr_pipeline import OCRPipeline
-from bharatwitness.utils.logging_utils import setup_logging
-from bharatwitness.utils.seed_utils import set_deterministic_seed
+from ocr.ocr_pipeline import OCRPipeline
+from utils.logging_utils import setup_logging
+from utils.seed_utils import set_deterministic_seed
 
 
 def calculate_file_hash(file_path: Path) -> str:

@@ -7,7 +7,7 @@ import numpy as np
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple, Union
 import yaml
-import logging
+
 from dataclasses import dataclass
 import torch
 from sentence_transformers import SentenceTransformer
@@ -18,9 +18,9 @@ from collections import defaultdict
 import heapq
 import regex as re
 
-from bharatwitness.pipeline.index_build import HybridIndexBuilder
-from bharatwitness.utils.span_utils import TextSpan, SpanManager
-from bharatwitness.utils.temporal_utils import TemporalFilter
+from pipeline.index_build import HybridIndexBuilder
+from utils.span_utils import TextSpan, SpanManager
+from utils.temporal_utils import TemporalFilter
 
 
 @dataclass

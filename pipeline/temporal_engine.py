@@ -12,9 +12,9 @@ from collections import defaultdict, deque
 import networkx as nx
 from pathlib import Path
 
-from bharatwitness.utils.temporal_utils import TemporalFilter, TemporalMetadata
-from bharatwitness.utils.span_utils import TextSpan, SpanManager
-from bharatwitness.pipeline.retrieval import RetrievalResult
+from utils.temporal_utils import TemporalFilter, TemporalMetadata
+from utils.span_utils import TextSpan, SpanManager
+from pipeline.retrieval import RetrievalResult
 
 @dataclass
 class TemporalSpan:

@@ -15,7 +15,7 @@ from scipy.special import softmax
 from sklearn.calibration import CalibratedClassifierCV
 import pickle
 
-from bharatwitness.utils.span_utils import TextSpan
+from utils.span_utils import TextSpan
 
 
 @dataclass

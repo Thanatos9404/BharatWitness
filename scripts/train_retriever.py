@@ -15,9 +15,9 @@ from sentence_transformers.evaluation import InformationRetrievalEvaluator
 import pandas as pd
 from tqdm import tqdm
 
-from bharatwitness.utils.logging_utils import setup_logging
-from bharatwitness.utils.seed_utils import set_deterministic_seed
-from bharatwitness.pipeline.index_build import HybridIndexBuilder
+from utils.logging_utils import setup_logging
+from utils.seed_utils import set_deterministic_seed
+from pipeline.index_build import HybridIndexBuilder
 
 
 class QADataset(Dataset):

@@ -11,9 +11,9 @@ import hashlib
 from collections import defaultdict
 import difflib
 
-from bharatwitness.pipeline.claim_verification import VerificationSummary, ClaimVerificationResult
-from bharatwitness.pipeline.temporal_engine import TemporalSpan, VersionedAnswer, AnswerDiff
-from bharatwitness.utils.span_utils import TextSpan, SpanManager
+from pipeline.claim_verification import VerificationSummary, ClaimVerificationResult
+from pipeline.temporal_engine import TemporalSpan, VersionedAnswer, AnswerDiff
+from utils.span_utils import TextSpan, SpanManager
 
 
 @dataclass

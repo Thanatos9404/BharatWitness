@@ -9,11 +9,11 @@ import tempfile
 import shutil
 from unittest.mock import Mock, patch
 
-from bharatwitness.pipeline.retrieval import QueryContext, RetrievalResult
-from bharatwitness.pipeline.claim_verification import VerificationSummary, ClaimVerificationResult
-from bharatwitness.pipeline.answer_builder import AnswerBuilder, AnswerEvidence
-from bharatwitness.pipeline.temporal_engine import TemporalSpan, TemporalEngine
-from bharatwitness.utils.span_utils import TextSpan
+from pipeline.retrieval import QueryContext, RetrievalResult
+from pipeline.claim_verification import VerificationSummary, ClaimVerificationResult
+from pipeline.answer_builder import AnswerBuilder, AnswerEvidence
+from pipeline.temporal_engine import TemporalSpan, TemporalEngine
+from utils.span_utils import TextSpan
 
 
 class TestPipelineIntegration(unittest.TestCase):

@@ -16,10 +16,10 @@ from rank_bm25 import BM25Okapi
 import faiss
 import hashlib
 from dataclasses import dataclass
-from bharatwitness.pipeline.chunker import TextChunk
-from bharatwitness.pipeline.segment import DocumentSegmenter
-from bharatwitness.pipeline.chunker import DocumentChunker
-from bharatwitness.utils.seed_utils import set_deterministic_seed
+from pipeline.chunker import TextChunk
+from pipeline.segment import DocumentSegmenter
+from pipeline.chunker import DocumentChunker
+from utils.seed_utils import set_deterministic_seed
 
 
 @dataclass

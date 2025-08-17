@@ -17,9 +17,9 @@ from sklearn.calibration import CalibratedClassifierCV
 import pickle
 from tqdm import tqdm
 
-from bharatwitness.utils.logging_utils import setup_logging
-from bharatwitness.utils.seed_utils import set_deterministic_seed
-from bharatwitness.pipeline.claim_verification import ClaimExtractor
+from utils.logging_utils import setup_logging
+from utils.seed_utils import set_deterministic_seed
+from pipeline.claim_verification import ClaimExtractor
 
 
 
