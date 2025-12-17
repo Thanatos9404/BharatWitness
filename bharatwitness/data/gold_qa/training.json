@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What are banking capital adequacy requirements?",
+    "answer": "Banks must maintain minimum capital adequacy ratio as per RBI guidelines.",
+    "positive_chunks": [
+      "chunk_banking_1",
+      "chunk_banking_2"
+    ],
+    "negative_chunks": [
+      "chunk_other_1",
+      "chunk_other_2"
+    ]
+  },
+  {
+    "question": "What are KYC requirements for financial institutions?",
+    "answer": "KYC procedures include identity verification and address proof documentation.",
+    "positive_chunks": [
+      "chunk_kyc_1",
+      "chunk_kyc_2"
+    ],
+    "negative_chunks": [
+      "chunk_other_3",
+      "chunk_other_4"
+    ]
+  }
+]

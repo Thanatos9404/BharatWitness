@@ -1,0 +1,50 @@
+# config/config.yaml
+# BharatWitness configuration
+
+corpus_root: "data/corpus/final_train"
+
+paths:
+  data_root: "data"
+  processed_root: "data/processed"
+  index_root: "data/processed/index"
+  cache_root: "data/processed/cache"
+  logs_root: "logs"
+  models_root: "models"
+
+ocr:
+  trust_threshold: 0.7
+  use_layout: true
+  max_workers: 4
+  languages: ["en", "hi"]
+
+retrieval:
+  dense_model: "intfloat/multilingual-e5-large"
+  sparse_model: "naver/splade-cocondenser-ensembledistil"
+  top_k: 50
+  chunk_size: 512
+  chunk_overlap: 64
+  hybrid_alpha: 0.5
+
+nli:
+  model: "microsoft/mdeberta-v3-base"
+  threshold: 0.8
+  batch_size: 16
+
+temporal:
+  enable_precedence: true
+  default_as_of_date: null
+
+answer:
+  max_length: 1024
+  min_evidence_spans: 2
+  refusal_threshold: 0.3
+
+evaluation:
+  metrics_output: "data/processed/reports"
+  test_split_ratio: 0.2
+
+system:
+  seed: 42
+  offline_mode: false
+  log_level: "INFO"
+  num_workers: 4
