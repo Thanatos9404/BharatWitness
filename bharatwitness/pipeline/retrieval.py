@@ -124,7 +124,7 @@ class HybridRetriever:
         sparse_results = []
         bm25_results = []
 
-        if self.faiss_index and self.dense_encoder:
+        if (self.faiss_index and self.dense_encoder) or (self.tfidf_vectorizer and self.dense_embeddings is not None):
             dense_results = self._dense_search(query, query_context.max_results)
 
         if self.sparse_vectors is not None:
