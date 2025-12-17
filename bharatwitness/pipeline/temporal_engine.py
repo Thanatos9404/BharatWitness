@@ -84,7 +84,7 @@ class PrecedenceGraph:
             return False
         if span.repeal_date and as_of_date > span.repeal_date:
             return False
-        return span.status in ['active', 'amended']
+        return span.status in ['active', 'amended', 'unknown', '']  # Accept unknown status as active
 
     def _has_active_superseding_span(self, span: TemporalSpan, as_of_date: datetime) -> bool:
         predecessors = list(self.graph.predecessors(span.span_id))
@@ -244,7 +244,7 @@ class TemporalEngine:
             return False
         if span.repeal_date and as_of_date > span.repeal_date:
             return False
-        return span.status == 'active'
+        return span.status in ['active', 'amended', 'unknown', '']  # Accept unknown status as active
 
     def resolve_conflicts(self, spans: List[TemporalSpan], as_of_date: datetime) -> Tuple[List[TemporalSpan], List[TemporalSpan]]:
         if not self.enable_precedence:
